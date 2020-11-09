@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minhas cidades visitadas</string>
+    <string name="country_empty">Cidade é obrigatória</string>
+    <string name="country_name_hint">Digite o nome da cidade</string>
+    <string name="country_name">Nome da cidade</string>
+    <string name="country_qt">Qtd. visitas</string>
+    <string name="country_brazil">Brazil</string>
+    <string name="country_canada">Canada</string>
+    <string name="country_china">China</string>
+    <string name="country_india">India</string>
+    <string name="country_usa">USA</string>
+    <string name="saveCountry">Salvar</string>
+    <string name="country_removed">Cidade: %1$s excluida</string>
+</resources>

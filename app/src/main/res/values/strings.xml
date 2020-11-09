@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">My visit citys</string>
+    <string name="my_countries" translatable="false">City Visited</string>
+    <string name="country_empty">City is required</string>
+    <string name="country_brazil">Brazil</string>
+    <string name="country_canada">Canada</string>
+    <string name="country_china">China</string>
+    <string name="country_india">India</string>
+    <string name="country_usa">USA</string>
+    <string name="country_name_hint">Type city Name</string>
+    <string name="country_name">City Name</string>
+    <string name="country_qt">Quantity</string>
+    <string name="saveCountry">Save</string>
+    <string name="country_removed">City: %1$s deleted</string>
+</resources>

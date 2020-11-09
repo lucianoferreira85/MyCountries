@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="country_images">
+        <item>@drawable/brazil</item>
+        <item>@drawable/canada</item>
+        <item>@drawable/china</item>
+        <item>@drawable/india</item>
+        <item>@drawable/usa</item>
+    </array>
+</resources>
