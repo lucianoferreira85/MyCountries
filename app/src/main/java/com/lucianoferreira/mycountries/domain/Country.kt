@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 data class Country(
     val id: Int,
     val name: String,
-    val quantity: Int = 0,
+    var quantity: Int = 0,
     val img: Int = 0
 ): Parcelable
 

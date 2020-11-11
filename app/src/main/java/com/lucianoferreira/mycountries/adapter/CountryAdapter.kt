@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.lucianoferreira.mycountries.R
 import com.lucianoferreira.mycountries.domain.Country
 import kotlinx.android.synthetic.main.item_country.view.*
-import java.util.*
 
 class CountryAdapter (private val context: Context,
                       private val countries: List<Country>,
@@ -41,15 +40,10 @@ class CountryAdapter (private val context: Context,
         val country = countries[position]
         holder.countryImg.setImageDrawable(countryImages.getDrawable(country.img))
         holder.textCountryName.text = country.name
-
-        Locale.setDefault(Locale.US)
-        //val subTotal = String.format("%.2f", food.price.times(food.quantity))
-        //holder.textFoodPrice.text = context.getString(R.string.food_subtotal, subTotal)
     }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val countryImg : ImageView = itemView.iconCountry
         val textCountryName: TextView = itemView.textCountryName
-        //val textFoodPrice: TextView = itemView.textFoodSubTotal
     }
 }

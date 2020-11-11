@@ -33,12 +33,12 @@
         android:id="@+id/edtCountryQt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="44dp"
         android:digits="0123456789."
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toEndOf="@+id/lblCountryQuantity"
         app:layout_constraintTop_toBottomOf="@id/lblCountryName" />
 
@@ -51,20 +51,21 @@
         android:text="@string/country_qt"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lblCountryName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblFoodPrice" />
+        app:layout_constraintTop_toBottomOf="@id/imgCountryDetail" />
 
     <TextView
         android:id="@+id/lblCountryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
-        android:layout_marginEnd="208dp"
+        android:layout_marginEnd="180dp"
         android:text="@string/country_name"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lblCountryType"
+        app:layout_constraintStart_toEndOf="@id/imgCountryDetail"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -74,5 +75,8 @@
         android:text="@string/saveCountry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCountryQt"
+        app:layout_constraintVertical_bias="0.216" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,13 @@ class CountryDetailMainActivity : AppCompatActivity() {
     private fun handlePressSave(country: Country?) {
         btnSave.setOnClickListener {
 
-            lblCountryName.text
+            val qtd = if (edtCountryQt.text.isNullOrEmpty()) 1
+            else edtCountryQt.text.toString().toInt()
+
+
+            if (country != null) {
+                country.quantity = qtd
+            }
 
             val intentBack = Intent(this, MainActivity::class.java)
             intentBack.putExtra(RESULT, country)

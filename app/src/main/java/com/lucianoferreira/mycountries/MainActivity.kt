@@ -65,13 +65,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun pressAddButton() {
         btnAddCountry.setOnClickListener {
-            //val type = countriesSpinner.selectedItem.toString()
+            val type = countriesSpinner.selectedItem.toString()
             val name = editCountryName.text.toString()
 
             if (name.isNotEmpty()) {
                 //val price = Random.nextDouble(1.0, 30.0)
-                //val typeIndex = resources.getStringArray(R.array.food_types).indexOf(type)
-                val country = Country (mCountryList.lastIndex + 1, name, 1)
+                val typeIndex = resources.getStringArray(R.array.country_types).indexOf(type)
+                val country = Country (mCountryList.lastIndex + 1, name, 1, typeIndex)
 
                 mCountryList.add(country)
                 mCountryAdapter.notifyItemInserted(mCountryList.lastIndex)
